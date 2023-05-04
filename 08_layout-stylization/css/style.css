@@ -16,22 +16,22 @@ img {
 @font-face {
   font-family: "Muller";
   src: local("Muller"), 
-    url("../fonts/MullerRegular.woff2"), format("woff2"),
-    url("../fonts/MullerRegular.woff"), format("woff");
+    url('../fonts/MullerRegular.woff2'), format("woff2"),
+    url('../fonts/MullerRegular.woff'), format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "Muller";
   src: local("Muller-Bold"), 
-    url("../fonts/MullerBold.woff2"), format("woff2"),
-    url("../fonts/MullerBold.woff"), format("woff");
+    url('../fonts/MullerBold.woff2'), format("woff2"),
+    url('../fonts/MullerBold.woff'), format("woff");
   font-weight: 700;
 }
 @font-face {
   font-family: "Muller";
   src: local("Muller-Medium"), 
-    url("../fonts/MullerMedium.woff2"), format("woff2"),
-    url("../fonts/MullerMedium.woff"), format("woff");
+    url('../fonts/MullerMedium.woff2'), format("woff2"),
+    url('../fonts/MullerMedium.woff'), format("woff");
   font-weight: 500;
 }
 body {
@@ -56,7 +56,7 @@ h2, h3 {
 }
 .title {
   font-weight: normal;
-  margin-left: 40px;
+  padding-left: 40px;
   font-size: 40px;
   line-height: 40px;
   color: #333333;
@@ -102,9 +102,6 @@ h2, h3 {
   border-radius: 15px;
   justify-content: space-between;
 }
-.header-menu {
-  margin-right: 69px;
-}
 .header-menu-list {
   display: flex;
   align-items: center;
@@ -125,7 +122,6 @@ h2, h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  margin-left: auto;
 }
 .header-btn-1 {
   margin-right: 40px;
@@ -304,7 +300,6 @@ h2, h3 {
 .news_cards_item {
   width: 275px;
   min-height: 275px;
-  margin-bottom: 22px;
   padding: 126px 45px 32px;
   background: #FFFFFF;
   border-radius: 15px;
