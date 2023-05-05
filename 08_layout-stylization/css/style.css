@@ -367,6 +367,9 @@ h2, h3 {
 .small-banners-item:not(:nth-child(3n)) {
   margin-right: 23px;
 }
+.small-banners-item:not(:last-child) {
+  margin-bottom: 23px;
+}
 .hotel-top {
   display: flex;
   flex-wrap: wrap;
