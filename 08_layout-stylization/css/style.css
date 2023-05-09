@@ -12,6 +12,7 @@ a {
 }
 img {
 	max-width: 100%;
+  vertical-align: top
 }
 @font-face {
   font-family: "Muller";
@@ -218,20 +219,23 @@ h2, h3 {
 }
 .offers-item_image_1 {
   background-image: url('../image/спецпредложения/Rectangle\ 151.png');
+  background-size: cover;
 }
 .offers-item_image_2 {
   background-image: url('../image/спецпредложения/Rectangle\ 152.png');
+  background-size: cover;
 }
 .offers-item_image_3 {
   background-image: url('../image/спецпредложения/33\ 13.jpg');
+  background-size: cover;
 }
 
 /*About*/
 .about-text {
   max-width: 888px;
-  min-height: 192px;
   font-size: 16px;
   line-height: 200%;
+  margin: 0;
 }
 
 /*Help*/
@@ -415,19 +419,18 @@ h2, h3 {
 
 /*BIG-BANNER*/
 .big-banner-image-1 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  padding: 27px;
   background-image: url(../image/размещение/41.png);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: cover;
   width: 374px;
   min-height: 440px;
 }
 .small-banners-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
-  padding: 373px 40px 27px 54px;
   font-weight: normal;
   font-size: 20px;
   line-height: 200%;
