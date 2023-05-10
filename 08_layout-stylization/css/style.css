@@ -370,6 +370,7 @@ h2, h3 {
 }
 .hotel-text {
   padding: 36px 45px 40px;
+  min-height: 222px;
 }
 .small-banners-item:not(:nth-child(3n)) {
   margin-right: 23px;
@@ -399,6 +400,7 @@ h2, h3 {
 }
 .small-banners-text {
   font-weight: normal;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1;
   color: #999999;
@@ -422,6 +424,8 @@ h2, h3 {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-end;
+  justify-content: center;
+  border-radius: 15px;
   padding: 27px;
   background-image: url(../image/размещение/41.png);
   background-repeat: no-repeat;
