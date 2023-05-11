@@ -399,8 +399,10 @@ h2, h3 {
   line-height: 1;
 }
 .small-banners-text {
+  display: block;
   font-weight: normal;
   margin-bottom: 20px;
+  margin-top: 0;
   font-size: 16px;
   line-height: 1;
   color: #999999;
