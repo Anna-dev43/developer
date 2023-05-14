@@ -347,3 +347,7 @@ template {
 [hidden] {
   display: none;
 }
+p, ul, li {
+  margin: 0;
+  padding: 0;
+}
