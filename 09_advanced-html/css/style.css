@@ -530,11 +530,13 @@ h2, h3 {
   border: 1px solid #CC9933;
   color: #CC9933;
 }
+.from-item {
+  border-bottom: 1px solid #c4c4c4;
+}
 
 /*contacts*/
 .contacts-item {
   display: flex;
-  justify-content: space-between;
   padding-bottom: 23px;
   border-bottom: 1px solid #c4c4c4;
   margin-bottom: 25px;
@@ -544,7 +546,7 @@ h2, h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #333333;
+  color: #999999;
 }
 .list-reset {
   list-style: none;
@@ -563,9 +565,30 @@ h2, h3 {
   flex-direction: column;
   flex-wrap: nowrap;
 }
-.contacts-item-form {
+.contacts-item-form-1 {
+  margin-right: 83px;
   font-style: normal;
-  margin-right: 45px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+.contacts-item-form-2 {
+  margin-right: 47px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+.contacts-item-form-3 {
+  margin-right: 93px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+.contacts-item-form-4 {
+  margin-right: 74px;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -610,7 +633,7 @@ h2, h3 {
 .contacts-left {
   display: flex;
   flex-direction: column;
-  width: 357px;
+  width: 375px;
   margin-right: 52px;
 }
 .btn-contacts {
@@ -645,11 +668,14 @@ h2, h3 {
   margin-right: 125px;
 }
 .footer-descr {
-  margin: 0;
   font-size: 16px;
   line-height: 190%;
   color: #FFFFFF;
   margin-bottom: 15px;
+}
+.footer-descr-1 {
+  font-size: 16px;
+  line-height: 190%;
 }
 .footer-link {
   font-size: 16px;
