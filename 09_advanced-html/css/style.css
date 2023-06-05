@@ -10,7 +10,7 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-img {
+img, svg {
 	max-width: 100%;
   vertical-align: top
 }
@@ -693,8 +693,18 @@ h2, h3 {
   align-items: flex-end;
 }
 .footer-net-item {
+  flex-direction: column;
+}
+.item-net {
+  display: block;
+}
+.net-item:not(:last-child) {
   margin-bottom: 20px;
 }
 .footer-item-address {
   margin-right: 260px;
+}
+.net-item {
+  width: 25px;
+  height: 25px;
 }
