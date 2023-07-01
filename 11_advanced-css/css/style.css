@@ -75,6 +75,20 @@ h2, h3 {
 .flex {
   display: flex;
 }
+:root {
+  --color-1: #F0BF5F;
+  --color-2: #CC9933;
+  --color-3: #CC9933;
+  --color-4: #A47312;
+  --color-5: #CEE8FA;
+  --color-6: #FFFFFF;
+  --color-7: #F1F1F1;
+  --color-8: #E9E9E9;
+  --color-9: #999999;
+  --color-10: #666666;
+  --color-11: #333333;
+  --color-12: #000000;
+ }
 
 /*Header*/
 .header-logo{
@@ -86,45 +100,57 @@ h2, h3 {
   margin-bottom: 30px;
 }
 .telefon {
-  border-bottom: none;
-  font-style: normal;
-  
-  line-height: 16px;
-  transition: color 0.3s ease-in-out;
-  color: #666666;
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-10);
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 .telefon:focus {
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
+  outline-offset: 5px;
+  color: var(--color-3);
+  outline: 1px solid var(--color-3);
 }
 .telefon:hover {
-  color: #F0BF5F;
+  color: var(--color-3);
 }
 .telefon:active {
-  color: var(--links-color);
+  color: var(--color-4);
   outline: none;
 }
 .header-profil {
   font-weight: 400;
   font-size: 16px;
-  padding-left: 30px;
   margin-left: auto;
-  color: #CC9933;
+  color: var(--color-3);
   line-height: 16px;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out, fill 0.3 ease-in-out;
 }
 .header-profil:focus {
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
+  outline-offset: 5px;
+  color: var(--color-3);
+  outline: 1px solid var(--color-3);
 }
 .header-profil:hover {
-  color: #F0BF5F;
-}
-.header-profil:hover svg path {
-  fill: #F0BF5F;
+  color: var(--color-1);
 }
 .header-profil:active {
-  color: var(--links-color);
+  color: var(--color-4);
+  outline: none;
+}
+.header-profil:focus svg path {
+  transition: fill 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+.header-profil:focus svg path {
+  outline-offset: 5px;
+  fill: var(--color-3);
+  outline: 1px solid var(--color-3);
+}
+.header-profil:hover svg path {
+  fill: var(--color-1);
+}
+.header-profil:active svg path {
+  fill: var(--color-4);
   outline: none;
 }
 .header-block {
@@ -158,7 +184,7 @@ h2, h3 {
 }
 .header-btn-1 {
   margin-right: 40px;
-  border: 1px solid #CC9933;
+  border: 1px solid var(--color-3);
   border-radius: 10px;
   width: 107px;
   height: 42px;
@@ -166,13 +192,13 @@ h2, h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #CC9933;
+  color: var(--color-3);
   background-color: transparent;
   outline: none;
   cursor: pointer;
 }
 .header-btn-2 {
-  border: 1px solid #CC9933;
+  border: 1px solid var(--color-3);
   border-radius: 10px;
   width: 177px;
   height: 42px;
@@ -180,106 +206,55 @@ h2, h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #CC9933;
+  color: var(--color-3);
   background-color: transparent;
   outline: none;
   cursor: pointer;
 }
 .header-btn-1:focus {
-  background-color: #CC9933;
-  color: #FFFFFF;
+  background-color: var(--color-3);
+  color: var(--color-6);
 }
 .header-btn-1:hover {
-  background-color: #F0BF5F;
-  color: #FFFFFF;
+  background-color: var(--color-1);
+  color: var(--color-6);
 }
 .header-btn-1:active {
-  background-color: #A47312;
-  color: #FFFFFF;
+  background-color: var(--color-4);
+  color: var(--color-6);
 }
 .header-btn-2:focus {
-  background-color: #CC9933;
-  color: #FFFFFF;
+  background-color: var(--color-2);
+  color: var(--color-6);
 }
 .header-btn-2:hover {
-  background-color: #F0BF5F;
-  color: #FFFFFF;
+  background-color: var(--color-1);
+  color: var(--color-6);
 }
 .header-btn-2:active {
-  background-color: #A47312;
-  color: #FFFFFF;
+  background-color: var(--color-4);
+  color: var(--color-6);
 }
 .item-link {
-color: var(--links-color);
-line-height: 16px;
-transition: color 0.3s ease-in-out;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--color-10);
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
-.item-link-1:focus {
-outline: 1px solid var(--links-color);
-outline-offset: 3px;
+.item-link:focus {
+  outline-offset: 5px;
+  color: var(--color-3);
+  outline: 1px solid var(--color-3);
 }
-.item-link-1:hover {
-color: #F0BF5F;
+.item-link:hover {
+  color: var(--color-3);
 }
-.item-link-1:active {
-color: var(--links-color);
-outline: none;
-}
-.item-link-2:focus {
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
-}
-.item-link-2:hover {
-  color: #F0BF5F;
-}
-.item-link-2:active {
-  color: var(--links-color);
+.item-link:active {
+  color: var(--color-4);
   outline: none;
 }
-.item-link-3:focus {
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
-}
-.item-link-3:hover {
-  color: #F0BF5F;
-}
-.item-link-3:active {
-  color: var(--links-color);
-  outline: none;
-}
-.item-link-4:focus {
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
-}
-.item-link-4:hover {
-  color: #F0BF5F;
-}
-.item-link-4:active {
-  color: var(--links-color);
-  outline: none;
-}
-.item-link-5:focus {
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
-}
-.item-link-5:hover {
-  color: #F0BF5F;
-}
-.item-link-5:active {
-  color: var(--links-color);
-  outline: none;
-}
-.item-link-6:focus {
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
-}
-.item-link-6:hover {
-  color: #F0BF5F;
-}
-.item-link-6:active {
-  color: var(--links-color);
-  outline: none;
-}
+
 /* wrapper */
 .special {
   display: flex;
@@ -326,24 +301,24 @@ outline: none;
 .small-link {
   font-size: 16px;
   line-height: 16px;
-  color: #CC9933;
+  color: var(--color-1);
+  transition: color 0.3s ease-in-out;
 }
 .small-link:focus {
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
+  color: var(--color-1);
 }
 .small-link:hover {
-  color: #F0BF5F;
+  color: var(--color-1);
+}
+.small-link:active {
+  color: var(--color-6);
 }
 .small-link:hover svg {
   transform: translate(15px 0);
-  color: var(--links-color);
-}
-.small-link:active {
-  color: var(--links-active);
+  color: var(--color-1);
 }
 .small-link:hover path {
-  stroke: var(--links-color);
+  stroke: var(--color-1);
 }
 .offers-item-big {
   width: 573px;
@@ -391,27 +366,32 @@ outline: none;
   margin-right: 24px;
 }
 .help_cards_item-content-title {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  color: #CC9933;
+  color: var(--color-3);
+  transition: color 0.3s ease-in-out;
 }
 .help_cards_item-content-title:focus {
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
+  color: var(--color-3)
 }
 .help_cards_item-content-title:hover {
-  color: #F0BF5F;
+  color: var(--color-1);
 }
 .help_cards_item-content-title:hover svg {
   transform: translate(15px 0);
-  color: var(--links-color);
+  color: var(--color-1);
 }
 .help_cards_item-content-title:active {
-  color: var(--links-active);
+  color: var(--color-4);
 }
 .help_cards_item-content-title:hover path {
-  stroke: var(--links-color);
+  stroke: var(--color-1);
+}
+.arrow-3 {
+  margin-left: 5px;
 }
 .help_cards_item-content-text {
   font-weight: 400;
@@ -783,19 +763,19 @@ outline: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #CC9933;
-  transition: color 0.3s ease-in-out;
+  color: var(--color-3);
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 .tel:focus {
-  color: var(--links-color);
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
+  outline-offset: 2px;
+  color: var(--color-3);
+  outline: 1px solid var(--color-3);
 }
 .tel:hover {
-  color: #F0BF5F;
+  color: var(--color-3);
 }
 .tel:active {
-  color: var(--links-color);
+  color: var(--color-4);
   outline: none;
 }
 .contacts-email {
@@ -803,31 +783,26 @@ outline: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #CC9933;
-  transition: color 0.3s ease-in-out;
+  color: var(--color-2);
+  
 }
-.email-1:focus {
-  color: var(--links-color);
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
+.email {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-3);
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
-.email-1:hover {
-  color: #F0BF5F;
+.email:focus {
+  outline-offset: 5px;
+  color: var(--color-3);
+  outline: 1px solid var(--color-3);
 }
-.email-1:active {
-  color: var(--links-color);
-  outline: none;
+.email:hover {
+  color: var(--color-3);
 }
-.email-2:focus {
-  color: var(--links-color);
-  outline: 1px solid var(--links-color);
-  outline-offset: 3px;
-}
-.email-2:hover {
-  color: #F0BF5F;
-}
-.email-2:active {
-  color: var(--links-color);
+.email:active {
+  color: var(--color-4);
   outline: none;
 }
 .contacts-item-question {
@@ -897,18 +872,72 @@ outline: none;
 .footer-link {
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: var(--color-3);
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+.footer-link:focus {
+  outline-offset: 5px;
+  color: var(--color-3);
+  outline: 1px solid var(--color-3);
+}
+.footer-link:hover {
+  color: var(--color-3);
+}
+.footer-link:active {
+  color: var(--color-4);
+  outline: none;
 }
 .footer-item-mail {
   font-size: 16px;
   line-height: 150%;
   color: #CC9933;
   flex-direction: column;
-  transition: color 0.3s ease-in-out;
+}
+.footer-mail {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 130px;
+  color: var(--color-3);
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+.footer-mail:focus {
+  outline-offset: 2px;
+  color: var(--color-3);
+  outline: 1px solid var(--color-3);
+}
+.footer-mail:hover {
+  color: var(--color-3);
+}
+.footer-mail:active {
+  color: var(--color-4);
+  outline: none;
 }
 .footer-item-phone {
   margin-bottom: 15px;
   flex-direction: column;
+}
+.footer-tel {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 147px;
+  color: var(--color-3);
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+.footer-tel:focus {
+  outline-offset: 2px;
+  color: var(--color-3);
+  outline: 1px solid var(--color-3);
+}
+.footer-tel:hover {
+  color: var(--color-3);
+}
+.footer-tel:active {
+  color: var(--color-4);
+  outline: none;
 }
 .footer-net {
   display: flex;
@@ -930,4 +959,17 @@ outline: none;
 .net-item {
   width: 25px;
   height: 25px;
+}
+.footer-icons {
+  fill: var(--color-9);
+  transition: fill 0.3s ease-in-out;
+}
+.footer-icons:focus {
+  fill: var(--color-3)
+}
+.footer-icons:hover {
+  fill: var(--color-2)
+}
+.footer-icons:active {
+  fill: var(--color-4)
 }
