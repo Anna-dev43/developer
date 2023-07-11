@@ -365,16 +365,17 @@ h2, h3 {
   font-size: 20px;
   line-height: 200%;
   color: var(--color-3);
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s;
 }
 .help_cards_item-content-title:focus {
   color: var(--color-3)
 }
 .help_cards_item-content-title:hover {
   color: var(--color-1);
+  transform: translate(11px 0);
 }
 .help_cards_item-content-title svg path{
-  transition: stroke 0,3s ease-in-out;
+  transition: stroke 0,3s;
 }
 .help_cards_item-content-title:active {
   color: var(--color-4);
@@ -891,6 +892,7 @@ h2, h3 {
 }
 .item-net {
   display: block;
+  outline: none;
 }
 .net-item:not(:last-child) {
   margin-bottom: 20px;
@@ -902,16 +904,15 @@ h2, h3 {
   width: 25px;
   height: 25px;
 }
-.footer-icons {
+.item-net svg path{
   fill: var(--color-9);
-  transition: fill 0.3s ease-in-out;
 }
-.footer-icons:focus {
-  fill: var(--color-3)
+.item-net:focus svg path{
+  fill: var(--color-2);
 }
-.footer-icons:hover {
-  fill: var(--color-2)
+.item-net:hover svg path{
+  fill: var(--color-3);
 }
-.footer-icons:active {
-  fill: var(--color-4)
+.item-net:active svg path{
+  fill: var(--color-4);
 }
