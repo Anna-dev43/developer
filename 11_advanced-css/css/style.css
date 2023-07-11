@@ -373,9 +373,8 @@ h2, h3 {
 .help_cards_item-content-title:hover {
   color: var(--color-1);
 }
-.help_cards_item-content-title:hover svg {
-  transform: translate(15px 0);
-  color: var(--color-1);
+.help_cards_item-content-title svg path{
+  transition: stroke 0,3s ease-in-out;
 }
 .help_cards_item-content-title:active {
   color: var(--color-4);
