@@ -294,20 +294,23 @@ h2, h3 {
   transition: color 0.3s ease-in-out;
 }
 .small-link:focus {
-  color: var(--color-1);
+  color: var(--color-3)
 }
 .small-link:hover {
   color: var(--color-1);
 }
 .small-link:active {
-  color: var(--color-6);
+  color: var(--color-4);
 }
-.small-link:hover svg {
-  transform: translate(15px 0);
-  color: var(--color-1);
+.small-link:focus svg path{
+  stroke: var(--color-3)
 }
-.small-link:hover path {
+.small-link:hover svg{
   stroke: var(--color-1);
+  transform: translate(11px, 0);
+}
+.small-link:active svg path{
+  stroke: var(--color-4)
 }
 .offers-item-big {
   width: 573px;
@@ -372,16 +375,19 @@ h2, h3 {
 }
 .help_cards_item-content-title:hover {
   color: var(--color-1);
-  transform: translate(11px 0);
-}
-.help_cards_item-content-title svg path{
-  transition: stroke 0,3s;
 }
 .help_cards_item-content-title:active {
   color: var(--color-4);
 }
-.help_cards_item-content-title:hover path {
+.help_cards_item-content-title:focus svg path{
+  stroke: var(--color-3)
+}
+.help_cards_item-content-title:hover svg{
   stroke: var(--color-1);
+  transform: translate(11px, 0);
+}
+.help_cards_item-content-title:active svg path{
+  stroke: var(--color-4)
 }
 .arrow-3 {
   margin-left: 5px;
