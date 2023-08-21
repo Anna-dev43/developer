@@ -42,7 +42,7 @@ body {
   list-style: none;
 }
 
-.reset_btn {
+.reset-btn {
   border: none;
   padding: 0;
   background-color: transparent;
@@ -309,7 +309,7 @@ body {
   border-radius: 32px;
 }
 
-.cards__detali-content {
+.cards-detali__content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -319,7 +319,7 @@ body {
   border-radius: 32px;
 }
 
-.card__detali-text {
+.cards-detali__text {
   max-width: 455px;
   margin-top: 0;
   margin-bottom: 0;
@@ -354,13 +354,7 @@ body {
   border-radius: 32px;
 }
 
-.card-1 {
-  display: flex;
-  max-width: 870px;
-  padding: 65px 116px 65px 60px;
-  border: 1px solid var(--color-9);
-  background-size: 0;
-  border-radius: 32px;
+.about__card:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -635,7 +629,7 @@ body {
   flex-direction: column;
 }
 
-.freedback__input {
+.feedback__input {
   margin-bottom: 25px;
   padding: 14px 24px;
   border: none;
@@ -643,17 +637,28 @@ body {
   color: var(--color-2);
   border-radius: 16px;
   background-color: var(--color-12);
+  outline: none;
+  transition: background-color .3s;
 }
 
-.freedback__input::placeholder {
+.feedback__input:hover,
+.feedback__input:focus {
+  background-color: var(--color-10);
+}
+
+.feedback__input:focus {
+  color: var(--color-1);
+}
+
+.feedback__input::placeholder {
   color: var(--color-2);
 }
 
-.freedback__input:last-of-type {
+.feedback__input:last-of-type {
   margin-bottom: 32px;
 }
 
-.freedback_input-text {
+.feedback__input-text {
   height: 150px;
   resize: none;
 }
@@ -663,35 +668,30 @@ body {
   align-items: center;
 }
 
-.freedblack-btn {
+.feedback-btn {
   flex-shrink: 0;
   margin-right: 22px;
   color: var(--color-2);
   transition: color .3s ease;
 }
 
-.freedblack-btn:focus {
+.feedback-btn:focus {
   outline: none;
 }
 
-.freedblack-btn:focus-visible:not(:hover) {
-  outline: 2px solid var(--color-5);
-  outline-offset: 2px;
-}
-
-.freedblack-btn:hover {
+.feedback-btn:hover {
   background-color: var(--color-5);
 }
 
-.freedblack-btn:active {
+.feedback-btn:active {
   background-color: var(--color-4);
 }
 
-.feetback__label {
+.feetback-label {
   cursor: pointer;
 }
 
-.freedback__visuall-check {
+.feedback__visuall-check {
   position: relative;
   display: inline-block;
   width: 14px;
@@ -699,7 +699,7 @@ body {
   border: 1px solid var(--color-9);
 }
 
-.freedback__visuall-check::before {
+.feedback__visuall-check::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -711,7 +711,7 @@ body {
   transform: translate(-50%, -60%) rotate(-45deg);
 }
 
-.freedback__visuall-check,
-.freedback__check-text {
+.feedback__visuall-check,
+.feedback__check-text {
   vertical-align: middle;
 }
