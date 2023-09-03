@@ -231,7 +231,7 @@ body {
 }
 
 .hero__text:last-of-type {
-  margin-bottom: 90px;
+  margin-bottom: 93px;
 }
 
 .hero__btn {
@@ -290,7 +290,7 @@ body {
 
 .about__cards-wrap {
   display: flex;
-  gap: 42px;
+  gap: 30px;
 }
 
 .about__colum {
