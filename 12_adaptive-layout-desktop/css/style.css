@@ -49,8 +49,8 @@ body {
 }
 
 :root {
-  --container-max: 1870px;
-  --container-padding: 50px;
+  --container-max: 1920px;
+  --container-padding: 75px;
   --color-1: #FFF;
   --color-2: #ffffff;
   --color-3: #FF9900;
@@ -106,13 +106,12 @@ body {
   flex-shrink: 0;
   width: 224px;
   min-height: 72px;
-  margin-right: 40px;
 }
 
 .header__menu-link {
   position: relative;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
 }
 
@@ -151,8 +150,8 @@ body {
 }
 
 .header__nav {
-  margin-left: auto;
-  margin-right: 85px;
+  margin-left: 821px;
+  margin-right: 55px;
 }
 
 .header__menu {
@@ -166,6 +165,7 @@ body {
 }
 
 .header__btn {
+  display: block;
   flex-shrink: 0;
   width: 24px;
   height: auto;
@@ -193,12 +193,13 @@ body {
 
 /*hero*/
 .hero {
-  margin-bottom: 59px;
+  padding-bottom: 27px;
 }
 .hero__wrap {
   position: relative;
   padding: 100px 80px;
-  height: 620px;
+  width: 1770px;
+  min-height: 620px;
   background-color: var(--color-7);
   background-image: url('../img/low-angle-photo-of-balconies-2462015\ 1.png');
   background-size: cover;
@@ -262,21 +263,25 @@ body {
 
 /*about*/
 .about {
-  margin-bottom: 110px;
+  padding-top: 27px;
+  padding-bottom: 55px;
 }
 
 .about__title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: normal;
   font-size: 48px;
-  line-height: 40px;
+  line-height: 48px;
   color: var(--color-6);
 }
 
 .about__text {
+  margin-top: 0;
   max-width: 1235px;
   font-size: 16px;
   line-height: 200%;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .about__cards:not(:last-child) {
@@ -285,7 +290,7 @@ body {
 
 .about__cards-wrap {
   display: flex;
-  justify-content: space-between;
+  gap: 42px;
 }
 
 .about__colum {
@@ -300,9 +305,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  max-width: 865px;
-  min-height: 620px;
-  width: 100%;
+  width: 870px;
+  min-height: 625px;
   background-color: var(--color-7);
   background-image: url(../img/about-big.png);
   background-size: cover;
@@ -348,7 +352,7 @@ body {
 
 .card {
   display: flex;
-  max-width: 870px;
+  width: 875px;
   padding: 65px 110px 65px 60px;
   border: 1px solid var(--color-9);
   background-size: 0;
@@ -356,7 +360,7 @@ body {
 }
 
 .about__card:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .card::before {
@@ -408,13 +412,15 @@ body {
 
 /*STAGE*/
 .stage {
-  margin-bottom: 110px;
+  padding-top: 52px;
+  padding-bottom: 57px;
 }
 .stage__title {
-  margin-bottom: 45px;
+  margin-top: 0;
+  margin-bottom: 35px;
   font-weight: normal;
   font-size: 48px;
-  line-height: 40px;
+  line-height: 48px;
   color: var(--color-6);
 }
 
@@ -424,7 +430,8 @@ body {
 }
 
 .stage__card-colum {
-  width: calc(870/1770*100%);
+  margin-right: 135px;
+  width: calc(870 / 1920 * 100%);
 }
 
 .stage__card-title {
@@ -435,13 +442,15 @@ body {
 }
 
 .stage-text {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   width: 758px;
-  height: 352px;
+  min-height: 352px;
 }
 
-.stage_btn-flex {
+.stage__btn-flex {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
 }
 
 .stage-btn {
@@ -508,11 +517,28 @@ body {
   display: block;
 }
 
+.stage__card-colum--image {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 870px;
+  min-height: 460px;
+  background-color: var(--color-7);
+  background-image: url(../img/stage18.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 32px;
+}
+
 /*ITEM*/
 .item {
-  margin-bottom: 90px;;
+  padding-top: 55px;
+  padding-bottom: 100px;;
 }
 .item__title {
+  margin-top: 0;
+  margin-bottom: 37px;
   font-weight: normal;
   font-size: 48px;
   line-height: 40px;
@@ -521,11 +547,12 @@ body {
 
 .item__colum {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .card-border {
-  max-width: 570px;
+  width: calc(100% / 3 - 64px / 3);
   padding: 65px 65px 65px 60px;
   border: 1px solid var(--color-9);
   background-size: 0;
@@ -551,8 +578,8 @@ body {
 }
 
 .footer__nav {
-  max-width: 300px;
-  margin-right: 349px;
+  width: 265px;
+  margin-right: 348px;
 }
 
 .footer__logo {
@@ -628,18 +655,19 @@ body {
 }
 
 .footer__feedback {
-  width: calc(570 / 1770 * 100%);
-  margin-right: 236px;
+  padding-top: 5px;
+  width: 570px;
+  margin-right: 233px;
 }
 
 .footer__about {
   padding-top: 87px;
-  width: calc(363 / 1770 * 100%);
+  width: 363px;
 }
 
 .feedback__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -652,10 +680,11 @@ body {
 }
 
 .feedback__input {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding: 14px 24px;
   border: none;
   line-height: 32px;
+  width: 573px;
   color: var(--color-2);
   border-radius: 16px;
   background-color: var(--color-12);
@@ -677,7 +706,7 @@ body {
 }
 
 .feedback__input:last-of-type {
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .feedback__input-text {
