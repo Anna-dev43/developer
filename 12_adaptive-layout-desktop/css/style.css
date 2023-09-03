@@ -28,11 +28,10 @@ body {
 }
 
 .container {
-  max-width: var(--container-max);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 75px;
+  padding-right: 50px;
 }
 
 .reset-list {
@@ -49,8 +48,6 @@ body {
 }
 
 :root {
-  --container-max: 1920px;
-  --container-padding: 75px;
   --color-1: #FFF;
   --color-2: #ffffff;
   --color-3: #FF9900;
@@ -150,12 +147,16 @@ body {
 }
 
 .header__nav {
-  margin-left: 821px;
-  margin-right: 55px;
+  margin-left: auto;
 }
 
 .header__menu {
-  gap: 10px 85px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu-item:not(:last-child) {
+  margin-right: 88px;
 }
 
 .header__logo-image {
@@ -166,6 +167,7 @@ body {
 
 .header__btn {
   display: block;
+  margin-left: 80px;
   flex-shrink: 0;
   width: 24px;
   height: auto;
@@ -290,7 +292,7 @@ body {
 
 .about__cards-wrap {
   display: flex;
-  gap: 38px;
+  gap: 30px;
 }
 
 .about__colum {
@@ -430,7 +432,7 @@ body {
 }
 
 .stage__card-colum {
-  margin-right: 135px;
+  margin-right: 100px;
   width: calc(870 / 1920 * 100%);
 }
 
@@ -579,7 +581,7 @@ body {
 
 .footer__nav {
   width: 265px;
-  margin-right: 348px;
+  margin-right: 338px;
 }
 
 .footer__logo {
@@ -717,16 +719,23 @@ body {
 .feedback__form-bootom {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 269px;
-  height: 58px;
+  justify-content: flex-start;
 }
 
 .feedback-btn {
+  display: flex;
+  align-items: center;
+  padding: 20px 47px;
+  margin-right: 20px;
+  width: 270px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: var(--color-3);
+  border-radius: 16px;
+  cursor: pointer;
   flex-shrink: 0;
-  margin-right: 22px;
   color: var(--color-2);
   transition: color .3s ease;
 }
