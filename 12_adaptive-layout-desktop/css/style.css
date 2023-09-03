@@ -290,11 +290,11 @@ body {
 
 .about__cards-wrap {
   display: flex;
-  gap: 30px;
+  gap: 38px;
 }
 
 .about__colum {
-  width: calc(870/1770*100%);
+  width: 870px;
 }
 
 .text {
