@@ -71,6 +71,13 @@ body {
   flex-wrap: wrap;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -100,6 +107,7 @@ body {
 .header__logo {
   display: flex;
   align-items: center;
+  margin-right: 40px;
   flex-shrink: 0;
   width: 224px;
   min-height: 72px;
@@ -152,7 +160,6 @@ body {
 
 .header__menu {
   display: flex;
-  justify-content: space-between;
 }
 
 .header__menu-item:not(:last-child) {
@@ -239,11 +246,11 @@ body {
 .hero__btn {
   flex-shrink: 0;
   width: 280px;
-  height: 78px;
+  padding: 30px 38px;
   font-size: 23px;
   line-height: 20px;
   color: var(--color-2);
-  transition: color .3s ease;
+  transition: background-color .3s ease;
 }
 
 .hero__btn:focus {
@@ -390,9 +397,9 @@ body {
 .about__btn {
   flex-shrink: 0;
   width: 175px;
-  height: 60px;
+  padding: 11px 32px;
   color: var(--color-2);
-  transition: color .3s ease;
+  transition: background-color .3s ease;
 }
 
 .about__btn:focus {
@@ -463,7 +470,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: var(--color-2);
-  transition: color .3s ease;
+  transition: background-color .3s ease;
 }
 
 .stage-btn:focus {
@@ -490,10 +497,10 @@ body {
   margin-right: 32px;
   flex-shrink: 0;
   width: 147px;
-  height: 60px;
+  padding: 15px 35px;
   font-size: 16px;
   line-height: 20px;
-  transition: color .3s ease;
+  transition: background-color .3s ease;
 }
 
 .btn-stage:focus {
@@ -728,16 +735,17 @@ body {
   display: flex;
   align-items: center;
   padding: 20px 47px;
-  margin-right: 20px;
+  margin-right: 15px;
   width: 270px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   background-color: var(--color-3);
   border-radius: 16px;
+  bottom: none;
   cursor: pointer;
   flex-shrink: 0;
   color: var(--color-2);
-  transition: color .3s ease;
+  transition: background-color .3s ease;
 }
 
 .feedback-btn:focus {
@@ -754,8 +762,10 @@ body {
 
 .feetback-label {
   cursor: pointer;
-  width: 279px;
-  height: 32px;
+}
+
+.feedback__checkbox {
+  appearance: none;
 }
 
 .feedback__visuall-check {
@@ -773,12 +783,20 @@ body {
   left: 50%;
   width: 7px;
   height: 4px;
+  opacity: 0;
   border-left: 2px solid var(--color-13);
   border-bottom: 2px solid var(--color-13);
-  transform: translate(-50%, -60%) rotate(-45deg);
+  transform: translate(-50%, -60%) rotate(-45deg) scale(2);
+  transition-property: opasity, transform;
+  transition-duration: .3s;
 }
 
 .feedback__visuall-check,
 .feedback__check-text {
   vertical-align: middle;
+}
+
+.feedback__checkbox:checked ~ .feedback__visuall-check::before {
+  opacity: 1;
+  transform: translate(-50%, -60%) rotate(-45deg) scale(1);
 }
