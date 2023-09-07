@@ -31,7 +31,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   padding-left: 75px;
-  padding-right: 50px;
+  padding-right: 75px;
 }
 
 .reset-list {
@@ -93,6 +93,7 @@ ul {
 .header {
   padding-top: 14px;
   padding-bottom: 14px;
+  width: 1920px;
   border-radius: 0 0 32px 32px;
   background-color: var(--color-1);
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.10);
@@ -278,7 +279,7 @@ ul {
 
 .about__title {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-weight: normal;
   font-size: 48px;
   line-height: 48px;
@@ -439,7 +440,7 @@ ul {
 }
 
 .stage__card-colum {
-  margin-right: 100px;
+  margin-right: 128px;
   width: calc(870 / 1920 * 100%);
 }
 
@@ -588,7 +589,7 @@ ul {
 
 .footer__nav {
   width: 265px;
-  margin-right: 338px;
+  margin-right: 348px;
 }
 
 .footer__logo {
@@ -735,13 +736,13 @@ ul {
   display: flex;
   align-items: center;
   padding: 20px 47px;
-  margin-right: 15px;
+  margin-right: 18px;
   width: 270px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   background-color: var(--color-3);
   border-radius: 16px;
-  bottom: none;
+  border: none;
   cursor: pointer;
   flex-shrink: 0;
   color: var(--color-2);
