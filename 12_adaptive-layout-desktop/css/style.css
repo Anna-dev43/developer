@@ -440,7 +440,7 @@ ul {
 }
 
 .stage__card-colum {
-  margin-right: 128px;
+  margin-right: 103px;
   width: calc(870 / 1920 * 100%);
 }
 
@@ -589,7 +589,7 @@ ul {
 
 .footer__nav {
   width: 265px;
-  margin-right: 348px;
+  margin-right: 338px;
 }
 
 .footer__logo {
@@ -691,10 +691,10 @@ ul {
 
 .feedback__input {
   margin-bottom: 23px;
-  padding: 14px 24px;
+  padding: 15px 24px;
   border: none;
   line-height: 32px;
-  width: 573px;
+  width: 569px;
   color: var(--color-2);
   border-radius: 16px;
   background-color: var(--color-12);
@@ -715,13 +715,19 @@ ul {
   color: var(--color-2);
 }
 
-.feedback__input:last-of-type {
-  margin-bottom: 29px;
-}
-
 .feedback__input-text {
   height: 150px;
   resize: none;
+  margin-bottom: 32px;
+  padding: 15px 24px;
+  border: none;
+  line-height: 32px;
+  width: 569px;
+  color: var(--color-2);
+  border-radius: 16px;
+  background-color: var(--color-12);
+  outline: none;
+  transition: background-color .3s;
 }
 
 .feedback__form-bootom {
@@ -735,9 +741,9 @@ ul {
 .feedback-btn {
   display: flex;
   align-items: center;
-  padding: 20px 47px;
+  padding: 20px 50px;
   margin-right: 18px;
-  width: 270px;
+  width: 268px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   background-color: var(--color-3);
