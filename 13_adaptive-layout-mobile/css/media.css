@@ -665,16 +665,20 @@ br {
 
 /*FOOTER*/
 .footer {
-  padding-top: 8px;
+  padding-top: 29px;
 }
 
 .footer__container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
   width: 320px;
   height: 678px;
-  flex-direction: column-reverse;
 }
 
 .footer__feedback {
+  padding: 0;
+  margin: 0;
   width: 320px;
 }
 
@@ -687,7 +691,6 @@ br {
   flex-direction: column;
   align-items: center;
   margin-right: 0;
-  gap: 16px;
 }
 
 .feedback__title {
@@ -717,15 +720,15 @@ br {
   align-content: flex-start;
   margin-right: 0;
   margin-bottom: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 25px;
   border-bottom: 1px solid var(--color-12);
 }
 
 .feedback-btn {
   margin-right: 0;
-  margin-bottom: 13px;
-  width: 162px;
-  padding: 12px 19px;
+  margin-bottom: 12px;
+  width: 160px;
+  padding: 12px 10px;
   font-size: 12px;
   line-height: 15px;
   border-radius: 8px;
