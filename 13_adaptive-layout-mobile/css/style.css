@@ -92,7 +92,6 @@ ul {
 .header {
   padding-top: 14px;
   padding-bottom: 14px;
-  width: 1920px;
   border-radius: 0 0 32px 32px;
   background-color: var(--color-1);
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.10);
@@ -108,7 +107,7 @@ ul {
   align-items: center;
   margin-right: 40px;
   flex-shrink: 0;
-  width: 224px;
+  max-width: 224px;
   min-height: 72px;
 }
 
@@ -129,7 +128,7 @@ ul {
   left: 0;
   bottom: -5px;
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: 2px;
   background-color: var(--color-3);
   transform: scaleX(0);
@@ -167,7 +166,7 @@ ul {
 
 .header__logo-image {
   display: block;
-  width: 225px;
+  max-width: 225px;
   height: auto;
 }
 
@@ -175,7 +174,7 @@ ul {
   display: block;
   margin-left: 85px;
   flex-shrink: 0;
-  width: 24px;
+  max-width: 24px;
   height: auto;
   color: var(--color-6);
   cursor: pointer;
@@ -207,7 +206,6 @@ ul {
 .hero__wrap {
   position: relative;
   padding: 100px 80px;
-  width: 1770px;
   min-height: 620px;
   background-color: var(--color-7);
   background-image: url('../img/low-angle-photo-of-balconies-2462015\ 1.png');
@@ -245,7 +243,7 @@ ul {
 
 .hero__btn {
   flex-shrink: 0;
-  width: 280px;
+  max-width: 280px;
   padding: 30px 38px;
   font-size: 23px;
   line-height: 20px;
@@ -300,7 +298,9 @@ ul {
 }
 
 .about__colum {
-  width: 870px;
+  display: flex;
+  flex-direction: column;
+  max-width: 870px;
 }
 
 .about__card-top {
@@ -348,7 +348,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 869px;
   min-height: 623px;
   background-color: var(--color-7);
   background-image: url(../img/about-big.png);
@@ -406,23 +405,17 @@ ul {
   color: var(--color-6);
 }
 
+.about__card {
+  flex-grow: 1;
+}
+
 .about__card:not(:last-child) {
   margin-bottom: 26px;
 }
 
-.card-1::before {
-  content: "";
-  flex-shrink: 0;
-  margin-right: 50px;
-  width: 190px;
-  background-image: inherit;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .about__btn {
   flex-shrink: 0;
-  width: 175px;
+  max-width: 175px;
   padding: 11px 32px;
   color: var(--color-2);
   transition: background-color .3s ease;
@@ -467,7 +460,7 @@ ul {
 
 .stage__card-colum {
   margin-right: 102px;
-  width: calc(870 / 1920 * 100%);
+  max-width: calc(870 / 1920 * 100%);
 }
 
 .stage__card-title {
@@ -479,7 +472,7 @@ ul {
 
 .text-stage {
   margin-bottom: 16px;
-  width: 758px;
+  max-width: 758px;
   min-height: 352px;
 }
 
@@ -492,7 +485,7 @@ ul {
 .stage-btn {
   margin-right: 32px;
   flex-shrink: 0;
-  width: 175px;
+  max-width: 175px;
   height: 60px;
   font-size: 16px;
   line-height: 20px;
@@ -523,7 +516,7 @@ ul {
   background-color: transparent;
   margin-right: 32px;
   flex-shrink: 0;
-  width: 147px;
+  max-width: 147px;
   padding: 15px 35px;
   font-size: 16px;
   line-height: 20px;
@@ -589,7 +582,7 @@ ul {
 }
 
 .card-border {
-  width: calc(100% / 3 - 64px / 3);
+  max-width: calc(100% / 3 - 64px / 3);
   padding: 65px 65px 65px 60px;
   border: 1px solid var(--color-9);
   background-size: 0;
@@ -599,7 +592,6 @@ ul {
 .item__card-title {
   margin-top: 0;
   margin-bottom: 10px;
-  width: 412px;
   font-size: 24px;
   line-height: 29px;
   font-style: normal;
@@ -615,14 +607,14 @@ ul {
 }
 
 .footer__nav {
-  width: 265px;
-  margin-right: 335px;
+  max-width: 265px;
+  margin-right: 7.5%;
 }
 
 .footer__logo {
   display: flex;
   align-items: flex-start;
-  width: 224px;
+  max-width: 224px;
   min-height: 72px;
   margin-bottom: 18px;
 }
@@ -663,7 +655,7 @@ ul {
 .socials__link {
   display: flex;
   align-items: flex-start;
-  width: 60px;
+  max-width: 60px;
   height: 60px;
 }
 
@@ -694,13 +686,14 @@ ul {
 
 .footer__feedback {
   padding-top: 5px;
-  width: 570px;
-  margin-right: 233px;
+  max-width: 570px;
+  margin-right: 40px;
 }
 
 .footer__about {
   padding-top: 87px;
-  width: 363px;
+  max-width: 363px;
+  margin-left: auto;
 }
 
 .feedback__title {
@@ -722,7 +715,7 @@ ul {
   padding: 14px 23px;
   border: none;
   line-height: 32px;
-  width: 570px;
+  max-width: 570px;
   color: var(--color-2);
   border-radius: 16px;
   background-color: var(--color-12);
@@ -750,7 +743,7 @@ ul {
   padding: 14px 24px;
   border: none;
   line-height: 32px;
-  width: 570px;
+  max-width: 570px;
   color: var(--color-2);
   border-radius: 16px;
   background-color: var(--color-12);
@@ -771,7 +764,7 @@ ul {
   align-items: center;
   padding: 21px 51px;
   margin-right: 18px;
-  width: 268px;
+  max-width: 268px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   background-color: var(--color-3);

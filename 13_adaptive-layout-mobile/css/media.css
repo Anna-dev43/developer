@@ -7,7 +7,6 @@
 .header {
   padding-top: 12px;
   padding-bottom: 15px;
-  width: 1024px;
   margin-bottom: 37px;
 }
 
@@ -16,7 +15,7 @@
 }
 
 .header__logo {
-  width: 150px;
+  max-width: 150px;
 }
 
 .header__btn {
@@ -26,7 +25,6 @@
 /*hero*/
 .hero__wrap {
   padding: 160px 77px;
-  width: 924px;
   min-height: 668px;
   background-image: url("../img/1024/hero.jpg");
 }
@@ -61,15 +59,16 @@
 }
 
 .about__colum {
-  width: 924px;
+  max-width: 924px;
 }
 
 .about__cards-wrap {
+  max-width: 100%;
   flex-wrap: wrap;
 }
 
 .cards-detali {
-  width: 924px;
+  max-width: 924px;
   min-height: 640px;
 }
 
@@ -87,7 +86,7 @@
 }
 
 .card__title {
-  width: 100%;
+  max-width: 100%;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -123,19 +122,19 @@
 
 .text-stage {
   margin-bottom: 25px;
-  width: 437px;
+  max-width: 437px;
   min-height: 576px;
 }
 
 .stage__card-colum--image {
   margin-top: 12px;
-  width: 437px;
+  max-width: 437px;
   min-height: 689px;
 }
 
 .stage__card-colum {
   margin-right: 50px;
-  width: 437px;
+  max-width: 437px;
 }
 
 /*ITEM*/
@@ -154,14 +153,14 @@
 }
 
 .card-border {
-  width: 924px;
+  max-width: 924px;
   height: 231px;
   padding: 65px 65px 65px 60px;
 }
 
 .item__card-title {
   margin-bottom: 8px;
-  width: 799px;
+  max-width: 799px;
 }
 
 /*FOOTER*/
@@ -179,11 +178,11 @@
 }
 
 .footer__feedback {
-  width: 541px;
+  max-width: 541px;
 }
 
 .footer__nav {
-  width: 251px;
+  max-width: 251px;
   margin-right: 132px;
 }
 
@@ -192,16 +191,16 @@
 }
 
 .feedback__input {
-  width: 541px;
+  max-width: 541px;
 }
 
 .feedback__input-text {
-  width: 541px;
+  max-width: 541px;
 }
 
 .feedback-btn {
   margin-right: 18px;
-  width: 240px;
+  max-width: 240px;
   padding: 19px 37px;
 }
 }
@@ -215,7 +214,6 @@
 .header {
   padding-top: 0;
   padding-bottom: 0;
-  width: 768px;
   margin-bottom: 38px;
 }
 
@@ -232,7 +230,7 @@
 }
 
 .header__logo {
-  width: 110px;
+  max-width: 110px;
 }
 
 .header__menu {
@@ -245,13 +243,12 @@
 }
 
 .header__btn {
-    margin-left: 49px;
+  margin-left: 49px;
 }
 
 /*HERO*/
 .hero__wrap {
   padding: 160px 40px;
-  width: 668px;
   min-height: 662px;
   border-radius: 24px;
 }
@@ -285,7 +282,7 @@
 }
 
 .about__colum {
-  width: 668px;
+  max-width: 668px;
 }
 
 .about__card-top {
@@ -294,7 +291,7 @@
 }
 
 .about__card-top::before {
-  width: 114px;
+  max-width: 114px;
   margin-right: 16px;
   background-position: center;
 }
@@ -304,13 +301,13 @@
 }
 
 .about__card-bottom::before {
-  width: 114px;
+  max-width: 114px;
   margin-right: 16px;
   background-position: center;
 }
 
 .cards-detali {
-  width: 668px;
+  max-width: 668px;
   min-height: 650px;
 }
 
@@ -348,31 +345,30 @@ br {
 .stage__card-colum--image {
   margin-top: 0;
   margin-bottom: 38px;
-  width: 668px;
   min-height: 284px;
   border-radius: 27px;
 }
 
 .stage__card-colum {
   margin-right: 0;
-  width: 667px;
+  max-width: 667px;
 }
 
 .text-stage {
   margin-bottom: 25px;
-  width: 667px;
+  max-width: 667px;
   min-height: 352px;
 }
 
 /*ITEM*/
 .card-border {
-  width: 668px;
+  max-width: 668px;
   height: 200px;
   padding: 35px 65px 35px 40px;
 }
 
 .item__card-title {
-  width: 563px;
+  max-width: 563px;
 }
 
 /*FOOTER*/
@@ -407,7 +403,6 @@ br {
     
 .header {
   margin-bottom: 20px;
-  width: 320px;
   height: 132px;
 }
     
@@ -432,7 +427,6 @@ br {
 
 .hero__wrap {
   padding: 60px 22px;
-  width: 290px;
   min-height: 308px;
 }
 
@@ -448,7 +442,7 @@ br {
 }
 
 .hero__btn {
-  width: 162px;
+  max-width: 162px;
   padding: 13px 20px;
   font-size: 12px;
   line-height: 15px;
@@ -487,7 +481,7 @@ br {
   
 .cards-detali {
   display: block;
-  width: 290px;
+  max-width: 290px;
   min-height: auto;
   background-size: 0;
   background-image: url("../img/368/about.jpg");
@@ -497,7 +491,7 @@ br {
 .cards-detali::before {
   content: "";
   display: block;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 8px;
   padding-top: calc(200 / 290 * 100%);
   border-color: var(--color-7);
@@ -533,7 +527,7 @@ br {
 }
   
 .about__btn {
-  width: 162px;
+  max-width: 162px;
   padding: 10px 35px;
   line-height: 15px;
   font-size: 12px;
@@ -541,7 +535,7 @@ br {
 }
   
 .about__colum {
-  width: 290px;
+  max-width: 290px;
 }
 
 .about__card-top {
@@ -551,7 +545,7 @@ br {
 }
 
 .about__card-top::before {
-  width: 64px;
+  max-width: 64px;
   height: 49px;
   margin-right: 0;
   margin-bottom: 12px;
@@ -565,7 +559,7 @@ br {
 }
 
 .about__card-bottom::before {
-  width: 64px;
+  max-width: 64px;
   height: 49px;
   margin-right: 0;
   margin-bottom: 12px;
@@ -597,7 +591,7 @@ br {
 
 .stage__card-colum--image {
   margin-bottom: 16px;
-  width: 290px;
+  max-width: 290px;
   min-height: 160px;
   background-image: url(../img/368/stage.jpg);
   border-radius: 18px;
@@ -609,7 +603,7 @@ br {
 }
 
 .text-stage {
-  width: 290px;
+  max-width: 290px;
   min-height: 728px;
 }
 
@@ -622,7 +616,7 @@ br {
 
 .stage-btn {
   margin-right: 10px;
-  width: 162px;
+  max-width: 162px;
   height: 40px;
   font-size: 12px;
   line-height: 15px;
@@ -630,7 +624,7 @@ br {
 
 .btn-stage {
   margin-right: 10px;
-  width: 118px;
+  max-width: 118px;
   height: 39px;
   font-size: 12px;
   line-height: 15px;
@@ -650,14 +644,14 @@ br {
 
 .card-border {
   padding: 0;
-  width: 290px;
+  max-width: 290px;
   height: 160px;
   border: none;
 }
 
 .item__card-title{
   margin-bottom: 4px;
-  width: 290px;
+  max-width: 290px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 500;
@@ -672,14 +666,14 @@ br {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
-  width: 320px;
+  max-width: 320px;
   height: 678px;
 }
 
 .footer__feedback {
   padding: 0;
   margin: 0;
-  width: 320px;
+  max-width: 320px;
 }
 
 .footer__menu {
@@ -700,7 +694,7 @@ br {
 }
 
 .feedback__input {
-  width: 290px;
+  max-width: 290px;
   padding: 14px 20px;
   font-size: 14px;
   line-height: 32px;
@@ -708,7 +702,7 @@ br {
 
 .feedback__input-text {
   margin-bottom: 25px;
-  width: 290px;
+  max-width: 290px;
   padding: 14px 20px;
   font-size: 14px;
   line-height: 32px;
@@ -727,7 +721,7 @@ br {
 .feedback-btn {
   margin-right: 0;
   margin-bottom: 12px;
-  width: 160px;
+  max-width: 160px;
   padding: 12px 10px;
   font-size: 12px;
   line-height: 15px;
@@ -741,12 +735,12 @@ br {
 
 .footer__logo {
   margin: 0;
-  width: 131px;
+  max-width: 131px;
   min-height: 42px;
 }
 
 .socials__link {
-  width: 40px;
+  max-width: 40px;
   height: 40px;
 }
 }
