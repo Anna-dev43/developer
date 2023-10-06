@@ -99,6 +99,7 @@ ul {
 }
 
 .header__container {
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -109,6 +110,11 @@ ul {
   flex-shrink: 0;
   max-width: 224px;
   min-height: 72px;
+}
+
+.header__nav {
+  margin-left: auto;
+  margin-right: 86px;
 }
 
 .header__menu-link {
@@ -156,23 +162,17 @@ ul {
   background-color: var(--color-4);
 }
 
-.header__nav {
-  margin-left: auto;
-}
-
 .header__menu {
   gap: 10px 85px;
 }
 
 .header__logo-image {
   display: block;
-  max-width: 225px;
   height: auto;
 }
 
 .header__btn {
   display: block;
-  margin-left: 85px;
   flex-shrink: 0;
   max-width: 24px;
   height: auto;
@@ -301,6 +301,7 @@ ul {
   display: flex;
   flex-direction: column;
   max-width: 870px;
+  width: 100%;
 }
 
 .about__card-top {
@@ -416,7 +417,7 @@ ul {
 .about__btn {
   flex-shrink: 0;
   max-width: 175px;
-  padding: 11px 32px;
+  padding: 11px 35px;
   color: var(--color-2);
   transition: background-color .3s ease;
 }
@@ -485,7 +486,7 @@ ul {
 .stage-btn {
   margin-right: 32px;
   flex-shrink: 0;
-  max-width: 175px;
+  width: 175px;
   height: 60px;
   font-size: 16px;
   line-height: 20px;
@@ -517,7 +518,7 @@ ul {
   margin-right: 32px;
   flex-shrink: 0;
   max-width: 147px;
-  padding: 15px 35px;
+  padding: 15px 37px;
   font-size: 16px;
   line-height: 20px;
   transition: background-color .3s ease;
@@ -608,7 +609,7 @@ ul {
 
 .footer__nav {
   max-width: 265px;
-  margin-right: 7.5%;
+  margin-right: 8.7%;
 }
 
 .footer__logo {
@@ -686,6 +687,7 @@ ul {
 
 .footer__feedback {
   padding-top: 5px;
+  width: 100%;
   max-width: 570px;
   margin-right: 40px;
 }
@@ -693,7 +695,6 @@ ul {
 .footer__about {
   padding-top: 87px;
   max-width: 363px;
-  margin-left: auto;
 }
 
 .feedback__title {
@@ -711,8 +712,8 @@ ul {
 }
 
 .feedback__input {
-  margin-bottom: 25px;
-  padding: 14px 23px;
+  margin-bottom: 23px;
+  padding: 15px 25px;
   border: none;
   line-height: 32px;
   max-width: 570px;
@@ -762,9 +763,9 @@ ul {
 .feedback-btn {
   display: flex;
   align-items: center;
-  padding: 21px 51px;
+  padding: 21px 52px;
   margin-right: 18px;
-  max-width: 268px;
+  max-width: 272px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   background-color: var(--color-3);
