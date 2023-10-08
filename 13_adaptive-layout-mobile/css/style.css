@@ -204,6 +204,32 @@ ul {
   color: var(--color-6);
 }
 
+.header__btn-btn {
+  display: none;
+  flex-shrink: 0;
+  max-width: 24px;
+  height: auto;
+  color: var(--color-6);
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+.header__btn-btn:focus {
+  outline: none;
+}
+
+.header__btn-btn:focus-visible:not(:hover) {
+  outline: 2px solid var(--color-3);
+  outline-offset: 2px;
+}
+
+.header__btn-btn:hover {
+  color: var(--color-3);
+}
+
+.header__btn-btn:active {
+  color: var(--color-6);
+}
 
 /*hero*/
 .hero {

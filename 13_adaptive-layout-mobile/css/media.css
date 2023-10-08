@@ -398,19 +398,27 @@ br {
 .header__container {
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 .header__nav {
   width: 100%;
+  order: 1;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .header__menu {
-  order: 2;
-  overflow: auto;
+  justify-content: space-between;
 }
 
 .header__btn {
+  display: none;
   order: 1;
+}
+
+.header__btn-btn {
+  display: block;
 }
 }
 
@@ -433,7 +441,11 @@ br {
     
 .header__menu {
   flex-wrap: nowrap;
-  column-gap: 28px;
+  margin-right: 28px;
+}
+
+.header__menu-item {
+  margin-right: 25px;
 }
 
 /*HERO*/
