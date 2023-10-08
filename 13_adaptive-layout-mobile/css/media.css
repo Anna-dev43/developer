@@ -202,7 +202,7 @@
 }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 960px) {
 /*HEADER*/
 .header {
   padding-top: 0;
@@ -226,13 +226,11 @@
   max-width: 110px;
 }
 
-.header__menu {
-  column-gap: 40px;
-}
-
 .header__menu-item {
   font-size: 16px;
-  line-height: 20px;
+  line-height: normal;
+  font-weight: 700;
+  margin-right: 40px;
 }
 
 .header__btn {
