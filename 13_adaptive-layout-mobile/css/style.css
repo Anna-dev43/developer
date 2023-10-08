@@ -90,12 +90,12 @@ ul {
 
 /*header*/
 .header {
-  padding-top: 14px;
+  padding-top: 17px;
   padding-bottom: 14px;
   border-radius: 0 0 32px 32px;
   background-color: var(--color-1);
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.10);
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .header__container {
@@ -108,13 +108,18 @@ ul {
   align-items: center;
   margin-right: 40px;
   flex-shrink: 0;
-  max-width: 224px;
+  width: 224px;
   min-height: 72px;
+}
+
+.header__nav,
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header__nav {
   margin-left: auto;
-  margin-right: 86px;
 }
 
 .header__menu-link {
@@ -122,10 +127,15 @@ ul {
 }
 
 .header__menu-item {
+  margin-right: 85px;
   flex-shrink: 0;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+}
+
+.header__menu-link {
+  position: relative;
 }
 
 .header__menu-link::after {
@@ -134,7 +144,7 @@ ul {
   left: 0;
   bottom: -5px;
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: 2px;
   background-color: var(--color-3);
   transform: scaleX(0);
@@ -162,12 +172,9 @@ ul {
   background-color: var(--color-4);
 }
 
-.header__menu {
-  gap: 10px 85px;
-}
-
 .header__logo-image {
   display: block;
+  width: 100%;
   height: auto;
 }
 
@@ -461,20 +468,18 @@ ul {
 
 .stage__card-colum {
   margin-right: 102px;
-  max-width: calc(870 / 1920 * 100%);
+  width: calc(760 / 1770 * 100%);
 }
 
 .stage__card-title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 24px;
   line-height: 32px;
 }
 
 .text-stage {
   margin-bottom: 16px;
-  max-width: 758px;
-  min-height: 352px;
 }
 
 .stage__btn-flex {
@@ -552,7 +557,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 870px;
+  width: calc(870 / 1770 * 100%);
   min-height: 460px;
   background-color: var(--color-7);
   background-image: url(../img/stage18.png);

@@ -1,26 +1,27 @@
 @media (max-width: 1280px) {
 /*header*/
-.container {
-  max-width: 1280px;
-}
-
 .header {
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   margin-bottom: 38px;
 }
 
-.header__menu {
-  column-gap: 60px;
-}
-
 .header__logo {
-  max-width: 150px;
+  width: 150px;
 }
 
 .header__nav {
+  flex-wrap: nowrap;
   margin-left: auto;
-  margin-right: 105px;
+  margin-right: 0;
+}
+
+.header__menu-item {
+  margin-right: 60px;
+}
+
+.header__btn {
+  margin-left: 47px;
 }
 
 /*hero*/
@@ -123,19 +124,17 @@
 
 .text-stage {
   margin-bottom: 25px;
-  max-width: 437px;
-  min-height: 576px;
 }
 
 .stage__card-colum--image {
   margin-top: 12px;
-  max-width: 437px;
+  width: calc(437 / 924 * 100%);
   min-height: 689px;
 }
 
 .stage__card-colum {
   margin-right: 50px;
-  max-width: 437px;
+  width: calc(437 / 924 * 100%);
 }
 
 /*ITEM*/
@@ -205,10 +204,6 @@
 
 @media (max-width: 980px) {
 /*HEADER*/
-.container {
-  max-width: 768px;
-}
-
 .header {
   padding-top: 0;
   padding-bottom: 0;
@@ -343,7 +338,6 @@ br {
 .stage__card-colum--image {
   margin-top: 0;
   margin-bottom: 38px;
-  max-width: 668px;
   width: 100%;
   min-height: 284px;
   border-radius: 27px;
@@ -351,13 +345,11 @@ br {
 
 .stage__card-colum {
   margin-right: 0;
-  max-width: 667px;
+  width: 100%;
 }
 
 .text-stage {
   margin-bottom: 25px;
-  max-width: 667px;
-  min-height: 352px;
 }
 
 /*ITEM*/
@@ -400,7 +392,6 @@ br {
 @media (max-width: 576px) {
 /*HEADER*/
 .container {
-  max-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -478,7 +469,6 @@ br {
 }
   
 .about__text {
-  max-width: 290px;
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 14px;
@@ -486,7 +476,6 @@ br {
   
 .cards-detali {
   display: block;
-  max-width: 290px;
   min-height: auto;
   background-size: 0;
   background-image: url("../img/368/about.jpg");
@@ -506,12 +495,15 @@ br {
 }
   
 .cards-detali__content {
+  flex-direction: column;
+  align-items: flex-start;
   padding: 0;
   color: var(--color-6);
   background-color: transparent;
 }
   
 .cards-detali__text {
+  max-width: 100%;
   margin-bottom: 12px;
   font-size: 14px;
   font-weight: 400;
@@ -539,10 +531,6 @@ br {
   border-radius: 8px;
 }
   
-.about__colum {
-  max-width: 290px;
-}
-
 .about__card-top {
   flex-wrap: wrap;
   padding: 0;
@@ -596,7 +584,6 @@ br {
 
 .stage__card-colum--image {
   margin-bottom: 16px;
-  max-width: 290px;
   min-height: 160px;
   background-image: url(../img/368/stage.jpg);
   border-radius: 18px;
@@ -605,11 +592,6 @@ br {
 .stage__card-title {
   font-size: 18px;
   line-height: 32px;
-}
-
-.text-stage {
-  max-width: 290px;
-  min-height: 728px;
 }
 
 .btn {
@@ -649,7 +631,6 @@ br {
 
 .card-border {
   padding: 0;
-  max-width: 290px;
   height: 160px;
   border: none;
 }
