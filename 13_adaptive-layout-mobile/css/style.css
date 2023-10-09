@@ -91,7 +91,7 @@ ul {
 /*header*/
 .header {
   padding-top: 17px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   border-radius: 0 0 32px 32px;
   background-color: var(--color-1);
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.10);
@@ -377,6 +377,10 @@ ul {
   color: var(--color-6);
 }
 
+.about__cards {
+  flex-grow: 1;
+}
+
 .cards-detali {
   display: flex;
   flex-direction: column;
@@ -504,7 +508,7 @@ ul {
 }
 
 .text-stage {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .stage__btn-flex {
@@ -614,7 +618,7 @@ ul {
 
 .card-border {
   max-width: calc(100% / 3 - 64px / 3);
-  padding: 65px 65px 65px 60px;
+  padding: 65px 65px 63px 60px;
   border: 1px solid var(--color-9);
   background-size: 0;
   border-radius: 32px;
@@ -623,6 +627,7 @@ ul {
 .item__card-title {
   margin-top: 0;
   margin-bottom: 10px;
+  max-width: 412px;
   font-size: 24px;
   line-height: 29px;
   font-style: normal;
@@ -634,7 +639,13 @@ ul {
   padding-top: 50px;
   padding-bottom: 50px;
   color: var(--color-9);
-  background-color: var(--color-11);
+  background-color: var(--color-6);
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer__nav {
@@ -709,22 +720,15 @@ ul {
   fill: var(--color-4);
 }
 
-.footer__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .footer__feedback {
   padding-top: 5px;
-  width: 100%;
-  max-width: 570px;
+  width: calc(570 / 1770 * 100%);
   margin-right: 40px;
 }
 
 .footer__about {
   padding-top: 87px;
-  max-width: 363px;
+  width: calc(363 / 1770 * 100%);
 }
 
 .feedback__title {
@@ -770,7 +774,7 @@ ul {
 .feedback__input-text {
   height: 150px;
   resize: none;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
   padding: 14px 24px;
   border: none;
   line-height: 32px;
@@ -790,9 +794,10 @@ ul {
 .feedback-btn {
   display: flex;
   align-items: center;
-  padding: 21px 52px;
-  margin-right: 18px;
+  padding: 20px 51px;
+  margin-right: 14px;
   max-width: 272px;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   background-color: var(--color-3);
