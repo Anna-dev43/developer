@@ -108,7 +108,7 @@ ul {
   margin-right: 40px;
   flex-shrink: 0;
   width: 224px;
-  min-height: 72px;
+  height: 72px;
 }
 
 .header__nav,

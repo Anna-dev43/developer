@@ -8,7 +8,7 @@
 }
 
 .footer__menu {
-  margin-bottom: 91px;
+  margin-bottom: 90px;
 }
 
 .footer__nav {
@@ -20,7 +20,7 @@
 }
 
 .feedback__title {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .footer__feedback {
@@ -49,13 +49,14 @@
 @media (max-width: 1280px) {
 /*header*/
 .header {
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 24px;
+  padding-bottom: 26px;
   margin-bottom: 38px;
 }
 
 .header__logo {
   width: 150px;
+  height: 48px;
 }
 
 .header__nav {
@@ -109,7 +110,7 @@
 }
 
 .about__colum {
-  max-width: 924px;
+  max-width: 100%;
 }
 
 .about__cards-wrap {
@@ -118,7 +119,7 @@
 }
 
 .cards-detali {
-  max-width: 924px;
+  max-width: 100%;
   min-height: 640px;
   background-image: url(../img/1024/about.jpg);
 }
@@ -203,7 +204,7 @@
 }
 
 .card-border {
-  max-width: 924px;
+  max-width: 100%;
   padding: 65px 65px 65px 60px;
 }
 
@@ -296,7 +297,7 @@
 }
 
 .about__colum {
-  max-width: 668px;
+  max-width: 100%;
 }
 
 .about__card-top {
@@ -323,7 +324,7 @@
 }
 
 .cards-detali {
-  max-width: 668px;
+  max-width: 100%;
   min-height: 650px;
 }
 
@@ -382,7 +383,6 @@ br {
 
 /*ITEM*/
 .card-border {
-  max-width: 668px;
   padding: 35px 65px 35px 40px;
 }
 
