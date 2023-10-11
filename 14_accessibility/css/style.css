@@ -786,6 +786,19 @@ ul {
   transition: background-color .3s;
 }
 
+.feedback__input-text:hover,
+.feedback__input-text:focus {
+  background-color: var(--color-10);
+}
+
+.feedback__input-text:focus {
+  color: var(--color-1);
+}
+
+.feedback__input-text::placeholder {
+  color: var(--color-2);
+}
+
 .feedback__form-bootom {
   align-items: center;
   justify-content: flex-start;
@@ -809,6 +822,11 @@ ul {
   transition: background-color .3s ease;
 }
 
+.feedback-btn:focus-visible:not(:hover) {
+  outline: 2px solid var(--color-5);
+  outline-offset: 2px;
+}
+
 .feedback-btn:focus {
   outline: none;
 }
@@ -823,6 +841,11 @@ ul {
 
 .feetback-label {
   cursor: pointer;
+  transition: color .3s;
+}
+
+.feetback-label:hover {
+  color: var(--color-2);
 }
 
 .feedback__checkbox {
@@ -834,7 +857,8 @@ ul {
   display: inline-block;
   width: 14px;
   height: 14px;
-  border: 1px solid var(--color-9);
+  border: 1px solid;
+  transition: border-color .3s;
 }
 
 .feedback__visuall-check::before {
@@ -848,7 +872,7 @@ ul {
   border-left: 2px solid var(--color-13);
   border-bottom: 2px solid var(--color-13);
   transform: translate(-50%, -60%) rotate(-45deg) scale(2);
-  transition-property: opasity, transform;
+  transition-property: opasity, transform, border-color;
   transition-duration: .3s;
 }
 
@@ -860,6 +884,10 @@ ul {
 .feedback__checkbox:checked ~ .feedback__visuall-check::before {
   opacity: 1;
   transform: translate(-50%, -60%) rotate(-45deg) scale(1);
+}
+
+.feedback__checkbox:focus ~ .feedback__visuall-check {
+  border-color: var(--color-5);
 }
 
 .footer__text {
