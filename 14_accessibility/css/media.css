@@ -179,7 +179,6 @@
 .stage__card-colum--image {
   margin-top: 12px;
   width: calc(437 / 924 * 100%);
-  min-height: 689px;
   background-image: url(../img/1024/stage.jpg);
 }
 
