@@ -102,14 +102,14 @@ h3 {
   justify-content: flex-end;
 }
 
-.nav__list {
+.nav-list {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: var(--color-3);
 }
 
-.nav__item:not(:last-child) {
+.nav-item:not(:last-child) {
   margin-right: 57px;
 }
 
@@ -253,8 +253,11 @@ h3 {
 }
 
 .teachers__cards {
-  border-radius: 23px 23px 0px 0px;
   overflow: hidden;
+}
+
+.teachers__img {
+  border-radius: 23px 23px 0px 0px;
 }
 
 .teachers__cards-content {
@@ -290,7 +293,7 @@ h3 {
   color: var(--color-6);
 }
 
-.course__img {
+.courses__img {
   width: 100%;
   display: block;
   margin-right: 0;
@@ -369,11 +372,11 @@ h3 {
   align-items: center;
 }
 
-.social__item:not(:last-child) {
+.social-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.social__link {
+.social-link {
   display: inline-block;
   width: 24px;
   height: 24px;
