@@ -111,6 +111,7 @@ h3 {
 
 .nav-item:not(:last-child) {
   margin-right: 57px;
+  flex-shrink: 0;
 }
 
 /*model*/
@@ -257,6 +258,7 @@ h3 {
 }
 
 .teachers__img {
+  width: 100%;
   border-radius: 23px 23px 0px 0px;
 }
 

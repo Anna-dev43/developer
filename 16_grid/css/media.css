@@ -164,11 +164,6 @@
 @media (max-width: 767px) {
   .container {
     max-width: 720px;
-    padding-right: 0;
-  }
-
-  .row {
-    margin-right: -2px;
   }
 
   .header {
